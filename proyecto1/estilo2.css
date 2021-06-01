@@ -1,0 +1,39 @@
+body{
+    background-image: url(noticia.png);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+    color:#fff;
+    font-family:'Arial', sans-serif;
+    font-size:14px;
+}
+
+section{
+    min-height:20px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    background: rgb(248, 75, 75);
+    margin-top: 20px;
+}
+
+#Bienvenidos {
+
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    margin-top: 20px;
+    background: rgb(1, 4, 33);
+}
+
+#información {
+
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 19px;
+    margin-top: 20px;
+    background: rgb(250, 248, 248);
+}

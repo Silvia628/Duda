@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cuestionario</title>
+        <script type="text/javascript">
+        function obtenerdatos()
+        {
+            var nombre = documento.getElementsByTagName('Escribe tu nombre').value;
+            var p1 = parseFloat(documents.getElementsById('edad').value);
+
+            document.registro.nombreobtenido.value = nombre;
+            document.registro.edadobtenida.value =p1;
+
+        }
+        </script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form action="gracias2.html" method="post">
+        <div id="container">
+            <header>
+                <h1>Proyecto</h1>
+            <section>
+            <div id="resultado"></div>
+                <form name="quizForm" onsubmit="return verificarRespuestas() ">
+                    
+                    <script language="JavaScript">
+                        function random_publicidad_sidebar_1(){
+                        
+                        var img_publicidad_sidebar_1=new Array() 
+                        img_publicidad_sidebar_1[1]="falsa1.jpg" 
+                        img_publicidad_sidebar_1[2]="falsa3.jpg"
+                        img_publicidad_sidebar_1[3]="falsa4.png"
+                        img_publicidad_sidebar_1[4]="falsa5.jpg"
+                        img_publicidad_sidebar_1[5]="falsa8.jpg"
+                        img_publicidad_sidebar_1[6]="falsa9.jpg"
+                        img_publicidad_sidebar_1[7]="falsa11.jpg"
+                        img_publicidad_sidebar_1[8]="falsa12.jpg"
+                        img_publicidad_sidebar_1[9]="falsa14.jpg"
+                        img_publicidad_sidebar_1[10]="falsa17.png"
+
+                        var link_publicidad_sidebar_1=new Array()
+                        link_publicidad_sidebar_1[1]="Regresa.html"
+                        link_publicidad_sidebar_1[2]="Regresa.html"
+                        link_publicidad_sidebar_1[3]="Regresa.html"
+                        link_publicidad_sidebar_1[4]="Regresa.html"
+                        link_publicidad_sidebar_1[5]="Regresa.html"
+                        link_publicidad_sidebar_1[6]="Regresa.html"
+                        link_publicidad_sidebar_1[7]="Regresa.html"
+                        link_publicidad_sidebar_1[8]="Regresa.html"
+                        link_publicidad_sidebar_1[9]="Regresa.html"
+                        link_publicidad_sidebar_1[10]="Regresa.html"
+
+                        var ry_publicidad_sidebar_1=Math.floor(Math.random()*img_publicidad_sidebar_1.length)
+                        if (ry_publicidad_sidebar_1==0)
+                        ry_publicidad_sidebar_1=1
+                        document.write('<a href='+'"'+link_publicidad_sidebar_1[ry_publicidad_sidebar_1]+'"target="_blank"'+'><img src="'
+                        +img_publicidad_sidebar_1[ry_publicidad_sidebar_1]+'" width="70%" height="40%" style="padding-top: 20px;"></a>')
+                        }
+                        random_publicidad_sidebar_1()
+                        </script>
+                <p>Responde las siguientes preguntas: </p>
+            </header>
+                    <h3>1. Nombre </h3>
+                    <input type="text" name="nombre" placeholder=" Escribe tu nombre "
+                    required><br/>
+
+                    <h3>2. La noticia anterior ¿es de tú agrado?:</h3>
+                    <input type="radio" name="p1" value = "a"
+                    required>a. Me agrada <br/>
+                    <input type="radio" name="p1" value = "b">b. Me agrada muy poco <br/>
+                    <input type="radio" name="p1" value = "c">c. No me agrada <br/>
+
+                    <h3>3. La noticia, ¿Te parece interesante?</h3>
+
+                    <input type="radio" name="p2" value = "a"
+                    required>a. Sí, es bastante interesante <br/>
+                    <input type="radio" name="p2" value = "b">b. Es un poco interesante  <br/>
+                    <input type="radio" name="p2" value = "c">c. No es interesante <br/>
+
+                    <h3>4. ¿Crees qué la noticia es verdadera?</h3>
+
+                    <input type="radio" name="p3" value = "a"
+                    required>a. Sí, es verdadera <br/>
+                    <input type="radio" name="p3" value = "b">b. No, es falsa <br/>
+
+                    <h3>5. Consideras qué las noticias falsas, ¿son peligrosas para la sociedad?</h3>
+                    <input type="radio" name="p4" value = "a"
+                    required>a. Sí <br/>
+                    <input type="radio" name="p4" value = "b">b. No <br/>
+
+                    <h3>6. ¿Tomas precauciones para no ingresar a links de noticas falsas?</h3>
+                    <input type="radio" name="p5" value = "a"
+                    required>a. Sí, siempre <br/>
+                    <input type="radio" name="p5" value = "b">b. Algunas veces <br/>
+                    <input type="radio" name="p5" value = "c">c. Muy pocas veces <br/>
+                    <input type="radio" name="p5" value = "d">d. Nunca <br/>
+
+                    <h3>7. ¿Qué opinas de las noticias falsas?</h3>
+                    <textarea type="text" name="texto" placeholder=" Escribe tu opinión, (Procura responder detalladamente) "required></textarea>
+
+                    <required><br/>
+
+                    <td><input type="submit" value= "Enviar" id="boton" onclick="obtenerdatos()"></td>
+                </form>
+            </section>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
